@@ -27,13 +27,13 @@
 #include "BulletTest.h"
 #include "Cantilever.h"
 #include "Car.h"
-#include "ContinuousTest.h"
 #include "Chain.h"
 #include "CharacterCollision.h"
 #include "CollisionFiltering.h"
 #include "CollisionProcessing.h"
 #include "CompoundShapes.h"
 #include "Confined.h"
+#include "ContinuousTest.h"
 #include "ConvexHull.h"
 #include "ConveyorBelt.h"
 #include "DistanceTest.h"
@@ -66,6 +66,7 @@
 #include "TheoJansen.h"
 #include "Tiles.h"
 #include "TimeOfImpact.h"
+#include "TopdownCar.h"
 #include "Tumbler.h"
 #include "VaryingFriction.h"
 #include "VaryingRestitution.h"
@@ -74,58 +75,59 @@
 
 TestEntry g_testEntries[] =
 {
-	{"Shape Cast", ShapeCast::Create },
-	{"Time of Impact", TimeOfImpact::Create},
-	{"Character Collision", CharacterCollision::Create},
-	{"Tiles", Tiles::Create},
-	{"Heavy on Light", HeavyOnLight::Create},
-	{"Heavy on Light Two", HeavyOnLightTwo::Create},
-	{"Vertical Stack", VerticalStack::Create},
-	{"Basic Slider Crank", BasicSliderCrank::Create},
-	{"Slider Crank", SliderCrank::Create},
-	{"Sphere Stack", SphereStack::Create},
-	{"Convex Hull", ConvexHull::Create},
-	{"Tumbler", Tumbler::Create},
-	{"Ray-Cast", RayCast::Create},
-	{"Dump Shell", DumpShell::Create},
+	{"Add Pair Stress Test", AddPair::Create},
 	{"Apply Force", ApplyForce::Create},
-	{"Continuous Test", ContinuousTest::Create},
-	{"Motor Joint", MotorJoint::Create},
-	{"One-Sided Platform", OneSidedPlatform::Create},
-	{"Mobile", Mobile::Create},
-	{"MobileBalanced", MobileBalanced::Create},
-	{"Conveyor Belt", ConveyorBelt::Create},
-	{"Gears", Gears::Create},
-	{"Varying Restitution", VaryingRestitution::Create},
-	{"Cantilever", Cantilever::Create},
-	{"Edge Test", EdgeTest::Create},
+	{"Basic Slider Crank", BasicSliderCrank::Create},
 	{"Body Types", BodyTypes::Create},
-	{"Shape Editing", ShapeEditing::Create},
-	{"Car", Car::Create},
-	{"Prismatic", Prismatic::Create},
-	{"Revolute", Revolute::Create},
-	{"Pulleys", Pulleys::Create},
-	{"Polygon Shapes", PolyShapes::Create},
-	{"Web", Web::Create},
-	{"RopeJoint", RopeJoint::Create},
-	{"Pinball", Pinball::Create},
-	{"Bullet Test", BulletTest::Create},
-	{"Confined", Confined::Create},
-	{"Pyramid", Pyramid::Create},
-	{"Theo Jansen's Walker", TheoJansen::Create},
-	{"Edge Shapes", EdgeShapes::Create},
-	{"PolyCollision", PolyCollision::Create},
-	{"Bridge", Bridge::Create},
 	{"Breakable", Breakable::Create},
+	{"Bridge", Bridge::Create},
+	{"Bullet Test", BulletTest::Create},
+	{"Cantilever", Cantilever::Create},
+	{"Car", Car::Create},
 	{"Chain", Chain::Create},
+	{"Character Collision", CharacterCollision::Create},
 	{"Collision Filtering", CollisionFiltering::Create},
 	{"Collision Processing", CollisionProcessing::Create},
 	{"Compound Shapes", CompoundShapes::Create},
+	{"Confined", Confined::Create},
+	{"Continuous Test", ContinuousTest::Create},
+	{"Convex Hull", ConvexHull::Create},
+	{"Conveyor Belt", ConveyorBelt::Create},
 	{"Distance Test", DistanceTest::Create},
 	{"Dominos", Dominos::Create},
+	{"Dump Shell", DumpShell::Create},
 	{"Dynamic Tree", DynamicTreeTest::Create},
+	{"Edge Shapes", EdgeShapes::Create},
+	{"Edge Test", EdgeTest::Create},
+	{"Gears", Gears::Create},
+	{"Heavy on Light", HeavyOnLight::Create},
+	{"Heavy on Light Two", HeavyOnLightTwo::Create},
+	{"Mobile", Mobile::Create},
+	{"MobileBalanced", MobileBalanced::Create},
+	{"Motor Joint", MotorJoint::Create},
+	{"One-Sided Platform", OneSidedPlatform::Create},
+	{"Pinball", Pinball::Create},
+	{"PolyCollision", PolyCollision::Create},
+	{"Polygon Shapes", PolyShapes::Create},
+	{"Prismatic", Prismatic::Create},
+	{"Pulleys", Pulleys::Create},
+	{"Pyramid", Pyramid::Create},
+	{"Ray-Cast", RayCast::Create},
+	{"Revolute", Revolute::Create},
+	{"RopeJoint", RopeJoint::Create},
 	{"Sensor Test", SensorTest::Create},
+	{"Shape Cast", ShapeCast::Create },
+	{"Shape Editing", ShapeEditing::Create},
+	{"Slider Crank", SliderCrank::Create},
+	{"Sphere Stack", SphereStack::Create},
+	{"Theo Jansen's Walker", TheoJansen::Create},
+	{"Tiles", Tiles::Create},
+	{"Time of Impact", TimeOfImpact::Create},
+	{"Topdown Car", TopdownCar::Create},
+	{"Tumbler", Tumbler::Create},
 	{"Varying Friction", VaryingFriction::Create},
-	{"Add Pair Stress Test", AddPair::Create},
+	{"Varying Restitution", VaryingRestitution::Create},
+	{"Vertical Stack", VerticalStack::Create},
+	{"Web", Web::Create},
 	{NULL, NULL}
 };

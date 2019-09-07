@@ -32,6 +32,11 @@ project 'Box2D'
 	files { 'Box2D/**' }
 	includedirs { '.' }
 
+project 'b2dJson'
+	kind 'StaticLib'
+	files { 'b2dJson/**' }
+	includedirs { '.' }
+
 project 'HelloWorld'
 	kind 'ConsoleApp'
 	files { 'HelloWorld/HelloWorld.cpp' }
@@ -79,7 +84,7 @@ project 'Testbed'
 			'Testbed/glfw/wgl_context.c',
 			'Testbed/glfw/egl_context.c'
 		}
-    	links { 'Box2D', 'opengl32', 'winmm' }
+    	links { 'Box2D', 'b2dJson', 'opengl32', 'winmm' }
 
     filter { 'system:macosx' }
     	files
@@ -102,6 +107,7 @@ project 'Testbed'
 		links
 		{
 			'Box2D',
+			'b2dJson',
 			'OpenGL.framework',
 			'Cocoa.framework',
 			'IOKit.framework',
@@ -136,6 +142,7 @@ project 'Testbed'
 		links
 		{
 			'Box2D',
+			'b2dJson',
 			'GL',
 			'X11',
 			'Xrandr',
